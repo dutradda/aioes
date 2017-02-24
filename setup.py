@@ -44,7 +44,7 @@ classifiers = [
 ]
 
 
-setup(name='aioes',
+setup(name='aioes-ext',
       version=read_version(),
       description=('Elasticsearch integration with asyncio.'),
       long_description='\n\n'.join((read('README.rst'), read('CHANGES.txt'))),
@@ -53,7 +53,6 @@ setup(name='aioes',
       author='Andrew Svetlov',
       author_email='andrew.svetlov@gmail.com',
       url='http://aioes.readthedocs.org',
-      download_url='https://pypi.python.org/pypi/aioes',
       license='Apache 2',
       packages=find_packages(),
       install_requires=install_requires,

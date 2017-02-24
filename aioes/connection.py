@@ -35,7 +35,7 @@ class Connection:
 
     @asyncio.coroutine
     def perform_request(self, method, url, params, body):
-        url = self._base_url + url.lstrip()
+        url = self._base_url + url.lstrip('/')
         resp = yield from self._session.request(
             method, url, params=params, data=body)
         resp_body = yield from resp.text()
